@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299207648518",
+    "project_id": "spot-connect-a1905",
+    "storage_bucket": "spot-connect-a1905.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299207648518:android:56bd3b0064ca0a282aea87",
+        "android_client_info": {
+          "package_name": "com.akshay.spotconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAChdmQDjw-DEzfN5WSq1nQSy1QUBK5IPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
