@@ -42,11 +42,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.akshay.spotconnect.R
 import com.akshay.spotconnect.location.LocationViewModel
+import com.akshay.spotconnect.ui.theme.SpotConnectTheme
 
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
@@ -159,13 +161,17 @@ fun MenuTopBar(onLocationClick:()->Unit, onLogout:()->Unit) {
     }, colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Black))
 }
 
-//@Preview(showBackground = true, showSystemUi = true)
-//@Composable
-//fun Prev() {
-//    SpotConnectTheme {
-//        MenuScreen {
-//
-//        }
-//    }
-//}
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun Prev() {
+    SpotConnectTheme {
+        MenuScreen(onItemClick = {
+            it.length
+        },
+            onLogout = {
+
+            })
+    }
+}
 
